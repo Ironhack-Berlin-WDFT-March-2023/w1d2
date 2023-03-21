@@ -1,0 +1,58 @@
+/* The :root CSS pseudo-class matches the root element of a 
+tree representing the document. In HTML, :root represents 
+the <html> element */
+:root {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+/* Select indirect descendants by class */
+#indirect-list .menu-item {
+    background-color: blue;
+    color: white;
+}
+
+/* indirect descendants */
+#indirect-list li {
+    background-color: blue;
+    color: white;
+}
+
+/* Select direct descendants */
+#direct-list > li {
+    background-color: blue;
+    color: white;
+}
+
+/* next-sibling-selector.
+Selects the element that immediately follows the former specified element */
+#former + div {
+    background-color: blue;
+    color: white;
+}
+
+/* Select multiple elements separated with comma */
+.one-element, .another-element {
+    background-color: red;
+}
+
+/* Select all spans with "lang" attribute */
+span[lang] {
+    font-weight: bold;
+}
+
+/* Select all spans with "lang" "portuguese" */
+span[lang="pt"] {
+    color: chartreuse; 
+}
+
+/* Select all spans with "lang"-attribute beginning with "en" */
+span[lang^="en"] {
+    color: darkblue;
+}
+
+/* Select every link with "href"-attribute containing "hack" */
+a[href*="hack"] {
+    color: chocolate;
+}
+

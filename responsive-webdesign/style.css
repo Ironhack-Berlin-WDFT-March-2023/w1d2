@@ -1,0 +1,63 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  height: 100vh;
+  background-color: lightblue;
+
+  /* Flexbox */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+.box {
+  width: 20%;
+  height: 50%;
+  background-color: tomato;
+  border: 3px solid black;
+  color: white;
+  font-size: 2em;
+  padding: 20px;
+  margin: 10px;
+}
+
+/* px: Absolute unit */
+#px-font {
+  font-size: 32px;
+}
+
+/* rem: Relative unit, depends on the font size of the root element */
+#rem-font {
+  font-size: 2rem;
+}
+
+/* em: Relative unit, depends on the font size of the parent element */
+#em-font-container {
+  font-size: 8px;
+}
+
+#em-font {
+  font-size: 4em;
+}
+
+/* Viewport-size: Depends on the size of the viewport */
+#unit-container {
+  width: 50vw;
+  height: 100px;
+  background-color: blue;
+  margin: 0;
+}
+
+/* %: Relative unit, depends on the size of the parent element */
+#unit-box {
+  width: 50%;
+  height: 50%;
+  background-color: red;
+}
+
+

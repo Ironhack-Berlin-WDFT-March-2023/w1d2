@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<!-- :root represents the root element: <html> -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced selectors</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <section>
+        <!-- Select indirect descendants -->
+        <ul id="indirect-list">
+            <li class="menu-item">Menu item 1</li>
+            <li class="menu-item">Menu item 2</li>
+            <li class="menu-item">Menu item 3</li>
+            <li class="menu-item">Menu item 4</li>
+            <div>
+                <li class="menu-item">Menu item 5</li>
+            </div>
+        </ul>
+    </section>
+
+    <hr>
+
+    <!-- Select direct descendants: -->
+    <section>
+        <ul id="direct-list">
+            <li>Menu item 1</li>
+            <li>Menu item 2</li>
+            <li>Menu item 3</li>
+            <li>Menu item 4</li>
+            <div>
+                <li>Menu item 5</li>
+            </div>
+        </ul>
+    </section>
+
+    <hr>
+
+    <!-- Select next sibling: -->
+    <section>
+        <div id="next-sibling">
+            <div>div 1</div>
+            <div>div 2</div>
+            <div>div 3</div>
+            <div id="former">div before target</div>
+            <div>target div</div>
+        </div>
+    </section>
+
+    <hr>
+
+    <!-- Select multiple elements -->
+    <section>
+        <div>
+            <div class="standard">div 1</div>
+            <div class="standard">div 2</div>
+            <div class="one-element">div 3</div>
+            <div class="standard">div 4</div>
+            <div class="another-element">div 5</div>
+        </div>
+    </section>
+
+    <hr>
+
+    <!-- Select elements by attribute -->
+    <section>
+        <span lang="en-us">Hello World</span>
+        <span lang="en-gb">Hello World</span>
+        <span lang="pt">Olá Mundo</span>
+        <span lang="fr">Bonjour monde</span>
+        <span lang="de">Hallo Welt</span>
+    </section>
+
+    <section>
+        <a href="https://www.google.com">Google</a>
+        <a href="https://www.ironhack.com">Ironhack</a>
+        <a href="https://www.github.com">GitHub</a>
+        <a href="https://en.wikipedia.org/wiki/hacker">Wikipedia</a>
+    </section>
+
+</body>
+</html>
